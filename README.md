@@ -1,58 +1,61 @@
-# Sistema Bancário Simples
+# 💰 Sistema Bancário Simples
 
-Um sistema bancário simples desenvolvido em Python, com funcionalidades básicas de depósito, saque e visualização de extrato.
+Um projeto de terminal feito em Python, simulando funcionalidades básicas de um sistema bancário.
 
-## 🧑‍💻 Criado por:
-Jessé Miguel Ramos
+## 📄 Informações Gerais
 
-## 🗕️ Data de criação:
-05/04/2025
+- **Autor:** Jessé Miguel Ramos  
+- **Data de Criação:** 05/04/2025  
+- **Última Atualização:** 12/04/2025  
+- **Versão:** 1.1  
 
-## 🧣 Versão:
-1.0
+## 🧠 Funcionalidades
 
-## 🚀 Funcionalidades:
+Este sistema oferece as seguintes operações:
 
-- [x] Depósito de valores
-- [x] Saque com verificação de limite diário
-- [x] Visualização de extrato com saldo atual
-- [x] Limite máximo de 3 saques diários
-- [x] Verificações de valores inválidos
-- [x] Interface de menu interativo em terminal
+- [1] Depositar
+- [2] Sacar
+- [3] Exibir Extrato
+- [4] Criar Novo Usuário
+- [5] Listar Contas Criadas
+- [6] Criar Nova Conta Bancária
+- [0] Sair do sistema
 
-## ⚙️ Como usar:
+## 🛠️ Tecnologias Utilizadas
 
-1. Execute o script Python:
+- Python 3.10+
+- Módulo `textwrap` (nativo do Python)
+
+## 🧾 Regras de Negócio
+
+- O usuário só pode realizar até **3 saques diários**.
+- Cada saque deve ser de no **máximo R$ 500,00**.
+- Só é possível realizar operações com valores **positivos**.
+- O extrato mostra todas as movimentações (depósitos e saques) e o saldo atual.
+- Usuários são identificados unicamente pelo CPF.
+- Uma conta bancária só pode ser criada se o CPF do usuário já estiver cadastrado.
+
+## ✅ Como Usar
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/Jesse-DEVs/sistema-bancario.git
+   cd sistema-bancario
+   ```
+
+2. Execute o programa:
    ```bash
    python sistema_bancario.py
    ```
 
-2. Use o menu para selecionar a operação desejada:
-   ```
-   MENU
-   [1] Deposito
-   [2] Saque
-   [3] Extrato
-   [4] Sair
-   ```
+3. Use o menu exibido para interagir com o sistema.
 
-3. Siga as instruções no terminal para cada operação.
+## 🧑‍💻 Estrutura do Código
 
-## 📌 Regras do sistema:
+- **Funções principais:** depositar, sacar, exibir extrato, criar usuário, criar conta, listar contas.
+- **Função `main()`** gerencia o fluxo principal do sistema e interage com o usuário via terminal.
 
-- O limite de saque por transação é R$500,00.
-- É permitido no máximo **3 saques por dia**.
-- Não é possível realizar saques com saldo insuficiente.
-- Valores negativos não são permitidos em depósitos ou saques.
+## 📌 Observações
 
-## 🛠️ Requisitos:
-
-- Python 3.x instalado
-
-## 📄 Licença:
-
-Este projeto é de uso educacional e livre para estudos.
-
----
-
-Sinta-se à vontade para sugerir melhorias ou implementar novas funcionalidades!
+- Este sistema não utiliza banco de dados — os dados são armazenados apenas em memória durante a execução.
+- Ideal para fins didáticos e prática de conceitos básicos de **funções**, **listas**, **dicionários**, **parâmetros especiais (`/` e `*`)** e **lógica de negócios**.
